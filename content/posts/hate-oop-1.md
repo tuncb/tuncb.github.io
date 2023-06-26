@@ -17,8 +17,6 @@ aliases = ["oop-hate-1"]
 I hate object oriented programming...
 <!--more-->
 
-# Why I hate Object oriented programming
-
 I hate object oriented programming because it is a scam.
 Object oriented programming is sold as a programming paradigm but actually it is a domain design paradigm.
 
