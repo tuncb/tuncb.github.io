@@ -124,6 +124,6 @@ We can bind the four transformations together using events attached to data, lik
 * **O**perations are transformations.
 * **S**uit your transformations to your needs.
 * **I**nabilities are not exceptions.
-* **Merge** your algorithms in pipelines.
+* **M**erge your algorithms in pipelines.
 
 Don't choose violence (OOP), choose G.E.O.S.I.M.
