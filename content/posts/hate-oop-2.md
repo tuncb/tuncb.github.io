@@ -1,7 +1,7 @@
 +++
 author = "Tunç Bahçecioğlu"
 title = "Why I still hate Object oriented programming"
-date = "2024-06-24"
+date = "2023-06-24"
 description = "Why I still hate Object oriented programming"
 tags = [
     "programming",
