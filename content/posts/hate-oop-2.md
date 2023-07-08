@@ -71,13 +71,10 @@ auto Transform2(const Data2 &input) -> Data3;
 Transformations can be customized using customizations points. The simplest customization point is just a function. If you want more you can use overload sets in C++ or something similar to interfaces, every programming language has some version of them like traits in Rust.
 
 ```cpp
-struct Data1;
-struct Data2;
-
-template <typename MyCustomizer>
-auto Transform(const Data1 &input, MyCustomizer fun) -> Data2
+template <auto InputData, auto OutputData, auto MyCustomizer>
+auto Transform(const InputData &input, MyCustomizer fun) -> OutputData
 {
-    if (fun(input)) {} // customizations
+    if (fun(input)) {} // customization
 }
 ```
 
@@ -97,7 +94,7 @@ auto Transform1(const Data1 &input) -> std::optional<Data2>;
 }
 ```
 
-## **Merge** your algorithms in pipelines.
+## **Merge** your algorithms into pipelines.
 
 Mingle your algorithms to form pipelines.
 Don't use implicit conditions like events to connect them, do it explicitly.
@@ -105,7 +102,7 @@ Don't use implicit conditions like events to connect them, do it explicitly.
 Explicit pathways are easy to understand and easy to change.
 
 ```cpp
-auto myPipeline(const Input &input) -> void;
+auto executePipeline(const Input &input) -> void;
 {
     auto data1 = transform1(input);
     auto data2 = transform2(data1);
